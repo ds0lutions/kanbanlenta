@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #172b4d;
+}
+
+.app {
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.app h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #172b4d;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b778c;
+  font-size: 14px;
+  margin-top: -20px;
+  margin-bottom: 32px;
+  letter-spacing: 0.3px;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  background: #ebecf0;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 400px;
+}
+
+.column h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #5e6c84;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  cursor: grab;
+  font-size: 14px;
+}
+
+.card:hover {
+  background: #f8f9fa;
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.add-task input {
+  width: 300px;
+  padding: 10px 14px;
+  border: 1px solid #dfe1e6;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.add-task input:focus {
+  border-color: #4c9aff;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  background: #0052cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-task button:hover {
+  background: #0747a6;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #97a0af;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: #de350b;
+}
+
+.column {
+  position: relative;
+  overflow: hidden;
+}
+
+.column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.board .column:nth-child(1)::before {
+  background: #e20e0e;
+}
+
+.board .column:nth-child(2)::before {
+  background: #06a4ff;
+}
+
+.board .column:nth-child(3)::before {
+  background: #57d9a3;
+}
+
+/* >768px */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+
+  .app h1 {
+    font-size: 24px;
+  }
+
+  .board {
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+
+  .column {
+    min-width: 220px;
+  }
+}
+
+/* >480px  */
+@media (max-width: 480px) {
+  .board {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .column {
+    width: 100%;
+    min-width: unset;
+    min-height: auto;
+  }
+
+  .add-task {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-task input {
+    width: 100%;
+  }
+}
