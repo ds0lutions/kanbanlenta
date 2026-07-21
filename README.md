@@ -1,8 +1,8 @@
 # Kanban užduočių lenta
 
-Asmeninio naudojimo Kanban tipo užduočių valdymo programa. Užduotis galima kurti, trinti ir tempti pele tarp trijų stulpelių (Reikia padaryti, Vykdoma, Atlikta). Pakeitimai išsaugomi duomenų bazėje.
+Asmeninio naudojimo Kanban tipo užduočių valdymo programa. Užduotis galima kurti, trinti ir tempti pele tarp trijų stulpelių. Pakeitimai išsaugomi duomenų bazėje.
 
-Baigiamasis darbas — Vilnius Coding School, JavaScript mokymai.
+Baigiamasis darbas  Vilnius Coding School, JavaScript mokymai.
 
 ## Demonstracija
 
@@ -56,4 +56,4 @@ Naršyklėje: `http://localhost:5173`
 
 ## Autorius
 
-Vardas Pavardė
+Danielius Buzanas
