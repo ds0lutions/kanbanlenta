@@ -6,9 +6,7 @@ Baigiamasis darbas  Vilnius Coding School, JavaScript mokymai.
 
 ## Demonstracija
 
-[Gyva versija](ČIA_ĮRAŠYK_VERCEL_NUORODĄ)
-
-![Ekrano nuotrauka](./screenshot.png)
+[Gyva versija](https://danielius.online)
 
 ## Technologijos
 
